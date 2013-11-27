@@ -1,0 +1,40 @@
+{
+    "name": "chadicus/chadicus-app",
+    "description": "The Chadicus Website",
+    "keywords": ["chadicus", "website"],
+    "authors": [
+        {
+            "name": "Chad Gray",
+            "email": "chadwickgray@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "extra": {
+        "heroku": {
+            "document-root": "public",
+            "newrelic": true,
+            "php-config": [
+                "date.timezone=America/New_York"
+            ]
+        }
+    },
+    "require": {
+        "php": "~5.4",
+        "slim/slim": "~2.3",
+        "slim/views": "~0.1.0",
+        "twig/twig": "~1.14",
+        "mailgun/mailgun-php": "~1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~3.7.19",
+        "phploc/phploc": "2.0.2",
+        "chadicus/coding-standard": "dev-master"
+    },
+    "provide": {
+        "ext-mcrypt": "*"
+    },
+    "autoload": {
+        "psr-0": { "Chadicus": ["src", "tests"] }
+    }
+}
