@@ -1,0 +1,73 @@
+.featured{
+    margin:20px auto;
+    text-align:center;
+}
+.featured img{
+    width:330px;
+}
+.featured-left{
+    margin-right:20px;
+    width:330px;
+}
+.featured-right{
+    margin-left:20px;
+    width:330px;
+}
+
+.logo{
+    margin:20px auto;
+    display:block;
+    text-align:center;
+    width:350px;
+}
+.logo img{
+    width:330px;
+}
+.jumbotron-home{
+    padding-top:147px;
+    margin-top:-147px;
+}
+.jumbotron-other{
+    font-size: 14px;
+    line-height: 1.4;
+}
+.jumbotron p{
+    margin:30px;
+}
+.jumbotron h1, .jumbotron h2, .jumbotron h3{
+    text-transform:uppercase;
+}
+.jumbotron h4, .jumbotron h5{
+    color:#e5e5e5;
+}
+.jumbotron table h5{
+    color:#00aedd;
+}
+.btn:hover{
+    -webkit-box-shadow: inset 0px 0px 66px 0px rgba(255, 255, 255, .3);
+    box-shadow: inset 0px 0px 66px 0px rgba(255, 255, 255, .3); 
+}
+.btn-huge{
+    font-size: 140%;
+    padding: 10px 50px;
+}
+.navbar{
+    
+}
+.form-horizontal .control-label{
+    padding:0px;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-default .navbar-nav > li > a {
+        padding:10px;
+        font-size:1.3em;
+        text-align:center;
+    }
+    .navbar-default .navbar-nav > li {
+        border-top:1px solid #151515;
+    }
+    .logo img{width:70%;}
+}
+
+
