@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Hulk{% endblock %}
+{% block content %}
+    <h1>Hulk Appearances</h1>
+    <table>
+        <tr>
+        {% for key,comic in comics %}
+            <td>{{ comic.title|e }}
+                <br />
+                <img src="{{ comic.thumbnail.path }}/portrait_xlarge.{{comic.thumbnail.extension}}" />
+            </td>
+            {% if (key + 1) % 5 == 0 %}
+                </tr><tr>
+            {% endif %}
+        {% endfor %}
+        </tr>
+    </table>
+{% endblock %}
