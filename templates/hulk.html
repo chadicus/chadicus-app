@@ -7,7 +7,9 @@
         {% for key,comic in comics %}
             <td>{{ comic.title|e }}
                 <br />
-                <img src="{{ comic.thumbnail.path }}/portrait_xlarge.{{comic.thumbnail.extension}}" />
+                <a href="{{ comic.urls.0.url }}">
+                    <img src="{{ comic.thumbnail.path }}/portrait_xlarge.{{comic.thumbnail.extension}}" />
+                </a>
             </td>
             {% if (key + 1) % 5 == 0 %}
                 </tr><tr>
