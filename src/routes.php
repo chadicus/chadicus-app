@@ -38,7 +38,7 @@ return function(\Slim\Slim $app) {
 
             $genre = Arrays::get($filteredGet, 'genre');
             if ($genre !== null) {
-                $allBooks = Arrays::where($books, ['genre' => $genre]);
+                $allBooks = Arrays::where($allBooks, ['genre' => $genre]);
             }
 
             $sort = Arrays::get($filteredGet, 'sort');
