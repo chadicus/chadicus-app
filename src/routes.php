@@ -76,8 +76,8 @@ return function(\Slim\Slim $app) {
             $result = ['error' => $e->getMessage()];
         }
 
-        header('Content-Type: application/json');
-        echo json_encode($result);
+        $app->contentType('application/json');
+        $app->response->setBody(json_encode($result));
     })->name('books');
 
     $app->get('/books/:id', function($id) use($app) {
@@ -90,7 +90,7 @@ return function(\Slim\Slim $app) {
             $result = $books[$id];
         }
 
-        header('Content-Type: application/json');
-        echo json_encode($result);
+        $app->contentType('application/json');
+        $app->response->setBody(json_encode($result));
     })->name('book');
 };
