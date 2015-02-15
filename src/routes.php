@@ -8,6 +8,16 @@ return function(\Slim\Slim $app) {
         $app->render('home.html', ['page' => 'home']);
     })->name('home');
 
+    $app->get('/resume', function() use ($app) {
+        $body = file_get_contents(__DIR__ . '/../data/resume.pdf');
+        $app->response->headers->set('Content-Type', "application/pdf");
+        $app->response->headers->set('Pragma', "public");
+        $app->response->headers->set('Content-disposition:', 'attachment; filename=chad_gray_resume.pdf');
+        $app->response->headers->set('Content-Transfer-Encoding', 'binary');
+        $app->response->headers->set('Content-Length', strlen($body));
+        $app->response->setBody($body);
+    });
+
     $app->get('/hulk', function() use ($app) {
 
         $client = new \Chadicus\Marvel\Api\Client(
