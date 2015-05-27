@@ -5,7 +5,8 @@ use DominionEnterprises\Util\Arrays;
 
 return function(\Slim\Slim $app) {
     $app->get('/', function() use($app) {
-        $app->render('home.html', ['page' => 'home']);
+        $projects = require_once __DIR__ . '/projects.php';
+        $app->render('home.html', ['page' => 'home', 'projects' => $projects]);
     })->name('home');
 
     $app->get('/resume', function() use ($app) {
