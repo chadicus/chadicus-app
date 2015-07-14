@@ -25,10 +25,16 @@ return [
         'packagist' => 'dom',
     ],
     [
-        'title' => 'Spl',
-        'description' => 'A collection of interfaces and classes that are meant to solve common problems.',
-        'github' => 'spl-php',
-        'packagist' => 'spl',
+        'title' => 'Types',
+        'description' => 'A collection of classes which provide various typehandling.',
+        'github' => 'types-php',
+        'packagist' => 'types',
+    ],
+    [
+        'title' => 'DataStructures',
+        'description' => 'A set of standard datastructures.',
+        'github' => 'datastructuers-php',
+        'packagist' => 'datastructures',
     ],
     [
         'title' => 'Encapsules',
@@ -47,5 +53,11 @@ return [
         'description' => 'Collection of PHP classes to work with file systems',
         'github' => 'io-php',
         'packagist' => 'io',
+    ],
+    [
+        'title' => 'CSV',
+        'description' => 'Collection of classes to work with csv files',
+        'github' => 'csv-php',
+        'packagist' => 'csv',
     ],
 ];
