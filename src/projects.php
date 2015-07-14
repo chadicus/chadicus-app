@@ -33,7 +33,7 @@ return [
     [
         'title' => 'DataStructures',
         'description' => 'A set of standard datastructures.',
-        'github' => 'datastructuers-php',
+        'github' => 'datastructures-php',
         'packagist' => 'datastructures',
     ],
     [
