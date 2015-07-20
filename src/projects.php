@@ -43,12 +43,6 @@ return [
         'packagist' => 'encapsules',
     ],
     [
-        'title' => 'Primaids',
-        'description' => 'A collection of utility classes to work with PHP primitive types.',
-        'github' => 'primaids',
-        'packagist' => 'primaids',
-    ],
-    [
         'title' => 'IO',
         'description' => 'Collection of PHP classes to work with file systems',
         'github' => 'io-php',
