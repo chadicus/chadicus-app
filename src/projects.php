@@ -1,10 +1,16 @@
 <?php
 return [
     [
-        'title' => 'Exceptions',
-        'description' => 'Collection of exception classes and utilities',
-        'github' => 'exceptions-php',
-        'packagist' => 'exceptions',
+        'title' => 'SPL-Exceptions',
+        'description' => 'Collection of standard exception classes',
+        'github' => 'spl-exceptions-php',
+        'packagist' => 'spl-exceptions',
+    ],
+    [
+        'title' => 'Util-Exceptions',
+        'description' => 'Collection of exception utility classes',
+        'github' => 'util-exceptions-php',
+        'packagist' => 'util-exceptions',
     ],
     [
         'title' => 'Test Helpers',
