@@ -31,16 +31,16 @@ return [
         'packagist' => 'dom',
     ],
     [
-        'title' => 'Types',
+        'title' => 'SPL-Types',
         'description' => 'A collection of classes which provide various typehandling.',
-        'github' => 'types-php',
-        'packagist' => 'types',
+        'github' => 'spl-types-php',
+        'packagist' => 'spl-types',
     ],
     [
-        'title' => 'DataStructures',
+        'title' => 'SPL-DataStructures',
         'description' => 'A set of standard datastructures.',
-        'github' => 'datastructures-php',
-        'packagist' => 'datastructures',
+        'github' => 'spl-datastructures-php',
+        'packagist' => 'spl-datastructures',
     ],
     [
         'title' => 'Encapsules',
