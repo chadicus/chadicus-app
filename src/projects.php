@@ -1,6 +1,24 @@
 <?php
 return [
     [
+        'title' => 'SLIM-OAUTH2-HTTP',
+        'description' => 'Bridge components for slim and oauth2 http messages.',
+        'github' => 'slim-oauth2-http',
+        'packagist' => 'slim-oauth2-http',
+    ],
+    [
+        'title' => 'SLIM-OAUTH2-MIDDLEWARE',
+        'description' => 'OAuth2 middleware for use within a Slim Framework API',
+        'github' => 'slim-oauth2-middleware',
+        'packagist' => 'slim-oauth2-middleware',
+    ],
+    [
+        'title' => 'SLIM-OAUTH2-ROUTES',
+        'description' => 'OAuth2 routes for use within a Slim Framework API',
+        'github' => 'slim-oauth2-routes',
+        'packagist' => 'slim-oauth2-routes',
+    ],
+    [
         'title' => 'SPL-Exceptions',
         'description' => 'Collection of standard exception classes',
         'github' => 'spl-exceptions-php',
