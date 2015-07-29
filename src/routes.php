@@ -104,4 +104,40 @@ return function(\Slim\Slim $app) {
         $app->contentType('application/json');
         $app->response->setBody(json_encode($result));
     })->name('book');
+
+    $app->get('/random-title', function () use ($app) {
+        try {
+            $filters = [
+                'startsWith' => [['string']],
+                'limit' => [['uint']],
+                'key' => ['required' => true,  ['string']],
+            ];
+
+            list($success, $filteredGet, $error) = Filterer::filter($filters, $_GET);
+            Util::ensure(true, $success, $error);
+
+            Util::ensure(getenv('CHADICUS_API_KEY'), $filteredGet['key'], 'http', ['Forbidden', 401]);
+
+            $letters = range('a', 'z');
+
+            $letter = Arrays::get($filteredGet, 'startsWith', $letters[array_rand($letters)]);
+            $limit = Arrays::get($filteredGet, 'limit', 1);
+
+            $nouns = require_once __DIR__ . '/nouns.php';
+            $adjectives = require_once __DIR__ . '/adjectives.php';
+
+            $result = [];
+            for ($i = 0; $i < $limit; $i++) {
+                $noun = $nouns[array_rand(preg_grep("/^{$letter}/", $nouns))];
+                $adjective = $adjectives[array_rand(preg_grep("/^{$letter}/", $adjectives))];
+                $result[] = ucwords("{$adjective} {$noun}");
+            }
+        } catch (\Exception $e) {
+            $app->response()->status(400);
+            $result = ['error' => $e->getMessage()];
+        }
+
+        $app->contentType('application/json');
+        $app->response->setBody(json_encode($result));
+    });
 };
