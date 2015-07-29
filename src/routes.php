@@ -108,7 +108,7 @@ return function(\Slim\Slim $app) {
     $app->get('/random-title', function () use ($app) {
         try {
             $filters = [
-                'startsWith' => [['string']],
+                'startsWith' => [['string', false, 1, 1], ['strtolower']],
                 'limit' => [['uint']],
                 'key' => ['required' => true,  ['string']],
             ];
