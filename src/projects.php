@@ -1,6 +1,12 @@
 <?php
 return [
     [
+        'title' => 'MARVEL-API-CLIENT',
+        'description' => 'PHP Client for the Marvel API',
+        'github' => 'marvel-api-client',
+        'packagist' => 'marvel-api-client',
+    ],
+    [
         'title' => 'SLIM-OAUTH2-HTTP',
         'description' => 'Bridge components for slim and oauth2 http messages.',
         'github' => 'slim-oauth2-http',
