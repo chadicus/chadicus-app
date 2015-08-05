@@ -19,12 +19,25 @@ return function(\Slim\Slim $app) {
         $app->response->setBody($body);
     });
 
+    $app->get('/marvel/:name', function($name) use ($app) {
+
+        $client = new \Chadicus\Marvel\Api\Client(
+            getenv('MARVEL_PRIVATE_KEY'),
+            getenv('MARVEL_PUBLIC_KEY'),
+            new \Chadicus\Marvel\Api\Adapter\CurlAdapter()
+        );
+
+        $response = $client->search('characters', ['name' => urldecode($name)]);
+
+        $app->render('marvel.html', ['name' => urldecode($name), 'wrapper' => $response->getBody()]);
+    })->name('marvel');
+
     $app->get('/hulk', function() use ($app) {
 
         $client = new \Chadicus\Marvel\Api\Client(
             getenv('MARVEL_PRIVATE_KEY'),
             getenv('MARVEL_PUBLIC_KEY'),
-            new \Chadicus\Marvel\Api\CurlAdapter()
+            new \Chadicus\Marvel\Api\Adapter\CurlAdapter()
         );
 
         $response = $client->search('comics', ['characters' => 1009351]);

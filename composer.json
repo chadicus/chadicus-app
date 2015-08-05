@@ -21,7 +21,8 @@
     },
     "require": {
         "php": "~5.4",
-        "chadicus/marvel-api-client": "dev-master",
+        "dominionenterprises/filter": "dev-master",
+        "chadicus/marvel-api-client": "~1.0",
         "slim/slim": "~2.3",
         "slim/views": "~0.1.0",
         "twig/twig": "~1.14"

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Marvel Character{% endblock %}
+{% block content %}
+    <h1>{{ name }}</h1>
+    <table>                                                                                                              
+        {% for character in wrapper.data.results %}                                                                                    
+            <tr>                                                                                                             
+                <td>
+                    <a href="{{ character.urls.0.url }}">
+                        <img src="{{ character.thumbnail.path }}/portrait_xlarge.{{character.thumbnail.extension}}" />
+                    </a>
+                </td>
+                <td>
+                    <p>{{ character.description }}<p>
+                </td>                                                                                                        
+            </tr>
+            {% for event in character.events.items %}                                                                                    
+                <tr>
+                    <td><p>{{ event.name }}</p></td>
+                <tr>
+            {% endfor %}                                                                                                     
+        {% endfor %}                                                                                                     
+    </table>  
+
+    <p>{{ wrapper.attributionHTML }}</p>
+{% endblock %}
