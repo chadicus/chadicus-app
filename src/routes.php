@@ -124,6 +124,7 @@ return function(\Slim\Slim $app) {
                 'startsWith' => [['string', false, 1, 1], ['strtolower']],
                 'limit' => [['uint']],
                 'key' => ['required' => true,  ['string']],
+                'pos' => [['in', ['noun', 'adjective']]],
             ];
 
             list($success, $filteredGet, $error) = Filterer::filter($filters, $_GET);
@@ -135,6 +136,7 @@ return function(\Slim\Slim $app) {
 
             $letter = Arrays::get($filteredGet, 'startsWith', $letters[array_rand($letters)]);
             $limit = Arrays::get($filteredGet, 'limit', 1);
+            $partOfSpeech = Arrays::get($filteredGet, 'pos');
 
             $nouns = require_once __DIR__ . '/nouns.php';
             $adjectives = require_once __DIR__ . '/adjectives.php';
@@ -142,7 +144,17 @@ return function(\Slim\Slim $app) {
             $result = [];
             for ($i = 0; $i < $limit; $i++) {
                 $noun = $nouns[array_rand(preg_grep("/^{$letter}/", $nouns))];
+                if ($partOfSpeech === 'noun') {
+                    $result[] = $noun;
+                    continue;
+                }
+
                 $adjective = $adjectives[array_rand(preg_grep("/^{$letter}/", $adjectives))];
+                if ($partOfSpeech === 'adjective') {
+                    $result[] = $adjective;
+                    continue;
+                }
+
                 $result[] = ucwords("{$adjective} {$noun}");
             }
         } catch (\Exception $e) {
