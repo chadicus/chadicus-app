@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "143f2eafc632cfa03e763bcfb06ce510",
-    "content-hash": "bd3f9cc8cde6336fa1c7136d484747da",
+    "hash": "1e8ef1ab9dabe03abe588d087e9cfc3b",
+    "content-hash": "8c439be8c83706ff1f897216c3bdbb84",
     "packages": [
         {
             "name": "chadicus/marvel-api-client",

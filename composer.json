@@ -13,7 +13,7 @@
     "extra": {
         "heroku": {
             "document-root": "public",
-            "newrelic": true,
+            "newrelic": false,
             "php-config": [
                 "date.timezone=America/New_York"
             ]
