@@ -21,7 +21,7 @@
     },
     "require": {
         "php": "~5.4",
-        "dominionenterprises/filter": "dev-master",
+        "dominionenterprises/filter": "~1.0",
         "chadicus/marvel-api-client": "~1.0",
         "slim/slim": "~2.3",
         "slim/views": "~0.1.0",
@@ -30,7 +30,7 @@
     "require-dev": {
         "phpunit/phpunit": "~3.7.19",
         "phploc/phploc": "2.0.2",
-        "chadicus/coding-standard": "dev-master"
+        "chadicus/coding-standard": "~1.0"
     },
     "autoload": {
         "psr-0": { "Chadicus": ["src", "tests"] }
