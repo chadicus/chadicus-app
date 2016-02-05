@@ -11,9 +11,11 @@
                         <h3><a href="https://github.com/chadicus/{{ project.github|e }}">{{ project.title|e }}</a></h3>
                         <p>{{ project.description|e }}</p>
                         <br />
-                        <a alt="Build Status" href="https://travis-ci.org/chadicus/{{ project.github|e }}">
-                            <img src="https://travis-ci.org/chadicus/{{ project.github|e }}.svg?branch=master" />
-                        </a>
+                        {% if project.travisci %}
+                            <a alt="Build Status" href="https://travis-ci.org/chadicus/{{ project.github|e }}">
+                                <img src="https://travis-ci.org/chadicus/{{ project.github|e }}.svg?branch=master" />
+                            </a>
+                        {% endif %}
                         {% if project.scrutinizer %}
                             <a alt="Code Quality" href="https://scrutinizer-ci.com/g/chadicus/{{ project.github|e }}/?branch=master">
                                 <img src="https://scrutinizer-ci.com/g/chadicus/{{ project.github|e }}/badges/quality-score.png?b=master" />
