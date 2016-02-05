@@ -7,6 +7,12 @@ return [
         'packagist' => 'marvel-api-client',
     ],
     [
+        'title' => 'SLIM-OAUTH2',
+        'description' => 'A collection of OAuth2 routes, middleware and utilities for use within a Slim Framework API',
+        'github' => 'slim-oauth2',
+        'packagist' => 'slim-oauth2',
+    ],
+    [
         'title' => 'SLIM-OAUTH2-HTTP',
         'description' => 'Bridge components for slim and oauth2 http messages.',
         'github' => 'slim-oauth2-http',
