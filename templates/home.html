@@ -14,12 +14,16 @@
                         <a alt="Build Status" href="https://travis-ci.org/chadicus/{{ project.github|e }}">
                             <img src="https://travis-ci.org/chadicus/{{ project.github|e }}.svg?branch=master" />
                         </a>
-                        <a alt="Code Quality" href="https://scrutinizer-ci.com/g/chadicus/{{ project.github|e }}/?branch=master">
-                            <img src="https://scrutinizer-ci.com/g/chadicus/{{ project.github|e }}/badges/quality-score.png?b=master" />
-                        </a>
-                        <a alt="Code Coverage" href="https://coveralls.io/github/chadicus/{{ project.github|e }}?branch=master">
-                            <img src="https://coveralls.io/repos/github/chadicus/{{ project.github|e }}/badge.svg?branch=master" />
-                        </a>
+                        {% if project.scrutinizer %}
+                            <a alt="Code Quality" href="https://scrutinizer-ci.com/g/chadicus/{{ project.github|e }}/?branch=master">
+                                <img src="https://scrutinizer-ci.com/g/chadicus/{{ project.github|e }}/badges/quality-score.png?b=master" />
+                            </a>
+                        {% endif %}
+                        {% if project.coverage %}
+                            <a alt="Code Coverage" href="https://coveralls.io/github/chadicus/{{ project.github|e }}?branch=master">
+                                <img src="https://coveralls.io/repos/github/chadicus/{{ project.github|e }}/badge.svg?branch=master" />
+                            </a>
+                        {% endif %}
                         <br />
                         <a alt="Latest Stable Version" href="https://packagist.org/packages/chadicus/{{ project.packagist|e }}">
                             <img src="https://poser.pugx.org/chadicus/{{ project.packagist|e }}/v/stable" />
