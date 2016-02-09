@@ -46,6 +46,15 @@ return [
         'coverage' => true,
     ],
     [
+        'title' => 'EXCEPTIONS',
+        'description' => 'Collection of exception classes and utilities',
+        'github' => 'exceptions-php',
+        'packagist' => 'exceptions',
+        'travisci' => false,
+        'scrutinizer' => false,
+        'coverage' => false,
+    ],
+    [
         'title' => 'SPL-Exceptions',
         'description' => 'Collection of standard exception classes',
         'github' => 'spl-exceptions-php',
