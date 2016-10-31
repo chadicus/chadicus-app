@@ -4,35 +4,36 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1e8ef1ab9dabe03abe588d087e9cfc3b",
-    "content-hash": "8c439be8c83706ff1f897216c3bdbb84",
+    "hash": "1ad14590fed30a3ceddd18dd30235c58",
+    "content-hash": "3c2ffc8b8cbcf722a88705dfb69ed059",
     "packages": [
         {
             "name": "chadicus/marvel-api-client",
-            "version": "v1.1.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/marvel-api-client.git",
-                "reference": "0784ee7b9fe75ad5922e78865aff4b294280fef3"
+                "reference": "021a7e72288d6f6c47eab19c7f3d76da315401ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/marvel-api-client/zipball/0784ee7b9fe75ad5922e78865aff4b294280fef3",
-                "reference": "0784ee7b9fe75ad5922e78865aff4b294280fef3",
+                "url": "https://api.github.com/repos/chadicus/marvel-api-client/zipball/021a7e72288d6f6c47eab19c7f3d76da315401ab",
+                "reference": "021a7e72288d6f6c47eab19c7f3d76da315401ab",
                 "shasum": ""
             },
             "require": {
-                "chadicus/spl-exceptions": "~0.2",
-                "chadicus/spl-types": "~0.1",
-                "dominionenterprises/filter": "~1.6.1",
-                "dominionenterprises/util": "~1.0",
-                "php": "~5.4"
+                "chadicus/spl-exceptions": "^1.0",
+                "chadicus/spl-types": "^1.0",
+                "dominionenterprises/filter": "^2.0",
+                "dominionenterprises/util": "^2.0",
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "chadicus/test-helpers": "~1.0",
-                "phpunit/phpunit": "~4.0",
-                "satooshi/php-coveralls": "~0.6.1",
-                "squizlabs/php_codesniffer": "~2.0"
+                "chadicus/coding-standard": "^1.1",
+                "chadicus/test-helpers": "^1.0",
+                "mongodb/mongodb": "^1.0",
+                "phpunit/phpunit": "^5.5",
+                "satooshi/php-coveralls": "^1.0"
             },
             "type": "library",
             "autoload": {
@@ -61,20 +62,20 @@
                 "marvel",
                 "rest"
             ],
-            "time": "2015-12-18 17:56:42"
+            "time": "2016-10-08 23:39:56"
         },
         {
             "name": "chadicus/spl-exceptions",
-            "version": "v0.2.1",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/spl-exceptions-php.git",
-                "reference": "09b72e20fc3945f8a382707fde0fa2917f15f364"
+                "reference": "36734a57b1a9da547e184e81d96569fd88249d2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/spl-exceptions-php/zipball/09b72e20fc3945f8a382707fde0fa2917f15f364",
-                "reference": "09b72e20fc3945f8a382707fde0fa2917f15f364",
+                "url": "https://api.github.com/repos/chadicus/spl-exceptions-php/zipball/36734a57b1a9da547e184e81d96569fd88249d2e",
+                "reference": "36734a57b1a9da547e184e81d96569fd88249d2e",
                 "shasum": ""
             },
             "require": {
@@ -100,6 +101,7 @@
                 {
                     "name": "Chad Gray",
                     "email": "chadwickgray@gmail.com",
+                    "homepage": "http://chadicus.org",
                     "role": "Developer"
                 }
             ],
@@ -108,20 +110,20 @@
                 "exception",
                 "spl"
             ],
-            "time": "2015-08-30 14:55:39"
+            "time": "2015-09-17 16:38:02"
         },
         {
             "name": "chadicus/spl-types",
-            "version": "v0.1.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/spl-types-php.git",
-                "reference": "69c17fd43c16c61adf1696370bec5672bd4e6dfd"
+                "reference": "a9571d3be10dc0cb12a7a7c08eb1fb246f370947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/spl-types-php/zipball/69c17fd43c16c61adf1696370bec5672bd4e6dfd",
-                "reference": "69c17fd43c16c61adf1696370bec5672bd4e6dfd",
+                "url": "https://api.github.com/repos/chadicus/spl-types-php/zipball/a9571d3be10dc0cb12a7a7c08eb1fb246f370947",
+                "reference": "a9571d3be10dc0cb12a7a7c08eb1fb246f370947",
                 "shasum": ""
             },
             "require": {
@@ -146,6 +148,7 @@
                 {
                     "name": "Chad Gray",
                     "email": "chadwickgray@gmail.com",
+                    "homepage": "http://chadicus.org",
                     "role": "Developer"
                 }
             ],
@@ -155,27 +158,27 @@
                 "spl",
                 "types"
             ],
-            "time": "2015-07-22 13:42:03"
+            "time": "2015-09-18 22:19:31"
         },
         {
             "name": "dominionenterprises/filter",
-            "version": "v1.6.2",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dominionenterprises/filter-php.git",
-                "reference": "37a6ed9fbdba3e5b190ad95424c9d151affb9598"
+                "reference": "88745a8385b0293460a8d0fc8db8a51e5a7d3b31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dominionenterprises/filter-php/zipball/37a6ed9fbdba3e5b190ad95424c9d151affb9598",
-                "reference": "37a6ed9fbdba3e5b190ad95424c9d151affb9598",
+                "url": "https://api.github.com/repos/dominionenterprises/filter-php/zipball/88745a8385b0293460a8d0fc8db8a51e5a7d3b31",
+                "reference": "88745a8385b0293460a8d0fc8db8a51e5a7d3b31",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.4 || ~7.0"
+                "php": "~5.6 || ~7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.1",
+                "phpunit/phpunit": "~5.0",
                 "satooshi/php-coveralls": "~0.6.1",
                 "squizlabs/php_codesniffer": "~2.0"
             },
@@ -213,32 +216,32 @@
             "keywords": [
                 "utility"
             ],
-            "time": "2015-11-18 17:46:51"
+            "time": "2016-08-23 00:40:18"
         },
         {
             "name": "dominionenterprises/util",
-            "version": "v1.9.0",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dominionenterprises/util-php.git",
-                "reference": "c3b71eed7e979453e58ed88e3da841806b617b1e"
+                "reference": "8e7c3c5182fbf0bd8eb25c8ef5a799b5346b98fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dominionenterprises/util-php/zipball/c3b71eed7e979453e58ed88e3da841806b617b1e",
-                "reference": "c3b71eed7e979453e58ed88e3da841806b617b1e",
+                "url": "https://api.github.com/repos/dominionenterprises/util-php/zipball/8e7c3c5182fbf0bd8eb25c8ef5a799b5346b98fb",
+                "reference": "8e7c3c5182fbf0bd8eb25c8ef5a799b5346b98fb",
                 "shasum": ""
             },
             "require": {
-                "dominionenterprises/util-arrays": "~1.8",
-                "dominionenterprises/util-file": "~1.8",
-                "dominionenterprises/util-http": "~1.8",
-                "dominionenterprises/util-string": "~1.8",
-                "dominionenterprises/util-time": "~1.8",
-                "php": "~5.4"
+                "dominionenterprises/util-arrays": "~2.0",
+                "dominionenterprises/util-file": "~2.0",
+                "dominionenterprises/util-http": "~2.0",
+                "dominionenterprises/util-string": "~2.0",
+                "dominionenterprises/util-time": "~2.0",
+                "php": "~5.6 || ~7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0",
+                "phpunit/phpunit": "~5.0",
                 "satooshi/php-coveralls": "~0.6.1",
                 "squizlabs/php_codesniffer": "~2.0"
             },
@@ -273,27 +276,27 @@
             "keywords": [
                 "utility"
             ],
-            "time": "2016-01-04 20:52:54"
+            "time": "2016-05-25 13:56:27"
         },
         {
             "name": "dominionenterprises/util-arrays",
-            "version": "v1.8.2",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dominionenterprises/util-arrays-php.git",
-                "reference": "1db93735c0a58f806df4247e0513449c67623d62"
+                "reference": "d69cadea3698b01d35fe2bd8ef9d974d115894e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dominionenterprises/util-arrays-php/zipball/1db93735c0a58f806df4247e0513449c67623d62",
-                "reference": "1db93735c0a58f806df4247e0513449c67623d62",
+                "url": "https://api.github.com/repos/dominionenterprises/util-arrays-php/zipball/d69cadea3698b01d35fe2bd8ef9d974d115894e9",
+                "reference": "d69cadea3698b01d35fe2bd8ef9d974d115894e9",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.4 || ~7.0"
+                "php": "~5.6 || ~7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0",
+                "phpunit/phpunit": "~5.0",
                 "satooshi/php-coveralls": "~0.6.1",
                 "squizlabs/php_codesniffer": "~2.0"
             },
@@ -329,27 +332,27 @@
                 "array",
                 "utility"
             ],
-            "time": "2015-10-05 00:58:38"
+            "time": "2016-05-24 18:15:26"
         },
         {
             "name": "dominionenterprises/util-file",
-            "version": "v1.8.2",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dominionenterprises/util-file-php.git",
-                "reference": "c73a83cc0d7f843a2db4bf38662e80e7616a4f49"
+                "reference": "e00a72d1978af15c1d049edd10ff2e9add4913bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dominionenterprises/util-file-php/zipball/c73a83cc0d7f843a2db4bf38662e80e7616a4f49",
-                "reference": "c73a83cc0d7f843a2db4bf38662e80e7616a4f49",
+                "url": "https://api.github.com/repos/dominionenterprises/util-file-php/zipball/e00a72d1978af15c1d049edd10ff2e9add4913bf",
+                "reference": "e00a72d1978af15c1d049edd10ff2e9add4913bf",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.4 || ~7.0"
+                "php": "~5.6 || ~7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0",
+                "phpunit/phpunit": "~5.0",
                 "satooshi/php-coveralls": "~0.6.1",
                 "squizlabs/php_codesniffer": "~2.0"
             },
@@ -386,27 +389,27 @@
                 "file",
                 "utility"
             ],
-            "time": "2015-10-04 20:24:36"
+            "time": "2016-05-24 18:59:20"
         },
         {
             "name": "dominionenterprises/util-http",
-            "version": "v1.8.2",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dominionenterprises/util-http-php.git",
-                "reference": "0363a75b870a23d2d91613da324deb1b8c808caf"
+                "reference": "a2233b80a89886029448ea1d2f281f3da98aad1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dominionenterprises/util-http-php/zipball/0363a75b870a23d2d91613da324deb1b8c808caf",
-                "reference": "0363a75b870a23d2d91613da324deb1b8c808caf",
+                "url": "https://api.github.com/repos/dominionenterprises/util-http-php/zipball/a2233b80a89886029448ea1d2f281f3da98aad1a",
+                "reference": "a2233b80a89886029448ea1d2f281f3da98aad1a",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.4 || ~7.0"
+                "php": "~5.6 || ~7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0",
+                "phpunit/phpunit": "~5.0",
                 "satooshi/php-coveralls": "~0.6.1",
                 "squizlabs/php_codesniffer": "~2.0"
             },
@@ -442,27 +445,27 @@
                 "http",
                 "utility"
             ],
-            "time": "2015-10-04 18:52:41"
+            "time": "2016-05-24 18:17:20"
         },
         {
             "name": "dominionenterprises/util-string",
-            "version": "v1.8.2",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dominionenterprises/util-string-php.git",
-                "reference": "7ba29ccd5fbd4a6db8636ac1da1c74c44e2972fb"
+                "reference": "773216c837873c8b2b4b4a02282426e257b7eaec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dominionenterprises/util-string-php/zipball/7ba29ccd5fbd4a6db8636ac1da1c74c44e2972fb",
-                "reference": "7ba29ccd5fbd4a6db8636ac1da1c74c44e2972fb",
+                "url": "https://api.github.com/repos/dominionenterprises/util-string-php/zipball/773216c837873c8b2b4b4a02282426e257b7eaec",
+                "reference": "773216c837873c8b2b4b4a02282426e257b7eaec",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.4"
+                "php": "~5.6 || ~7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0",
+                "phpunit/phpunit": "~5.0",
                 "satooshi/php-coveralls": "~0.6.1",
                 "squizlabs/php_codesniffer": "~2.0"
             },
@@ -498,27 +501,27 @@
                 "string",
                 "utility"
             ],
-            "time": "2015-10-04 20:12:05"
+            "time": "2016-05-24 18:00:00"
         },
         {
             "name": "dominionenterprises/util-time",
-            "version": "v1.8.2",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dominionenterprises/util-time-php.git",
-                "reference": "ae6bf07e4d38bfcf9d6efdd62b0932facaa52670"
+                "reference": "177cbbbc693b0453036e649b9c0e74bd09d34622"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dominionenterprises/util-time-php/zipball/ae6bf07e4d38bfcf9d6efdd62b0932facaa52670",
-                "reference": "ae6bf07e4d38bfcf9d6efdd62b0932facaa52670",
+                "url": "https://api.github.com/repos/dominionenterprises/util-time-php/zipball/177cbbbc693b0453036e649b9c0e74bd09d34622",
+                "reference": "177cbbbc693b0453036e649b9c0e74bd09d34622",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.4 || ~7.0"
+                "php": "~5.6 || ~7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0",
+                "phpunit/phpunit": "~5.0",
                 "satooshi/php-coveralls": "~0.6.1",
                 "squizlabs/php_codesniffer": "~2.0"
             },
@@ -554,7 +557,7 @@
                 "time",
                 "utility"
             ],
-            "time": "2015-10-05 00:22:04"
+            "time": "2016-05-24 19:04:00"
         },
         {
             "name": "slim/slim",
@@ -657,16 +660,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.0",
+            "version": "v1.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8"
+                "reference": "3c6c0033fd3b5679c6e1cb60f4f9766c2b424d97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3c6c0033fd3b5679c6e1cb60f4f9766c2b424d97",
+                "reference": "3c6c0033fd3b5679c6e1cb60f4f9766c2b424d97",
                 "shasum": ""
             },
             "require": {
@@ -679,7 +682,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.24-dev"
+                    "dev-master": "1.27-dev"
                 }
             },
             "autoload": {
@@ -714,22 +717,22 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-01-25 21:22:18"
+            "time": "2016-10-25 19:17:17"
         }
     ],
     "packages-dev": [
         {
             "name": "chadicus/coding-standard",
-            "version": "v1.0.1",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chadicus/coding-standard.git",
-                "reference": "971fac1625463a72df0034fbfdd263561f2ccb4f"
+                "reference": "3264851a30a7305995998660ee239d1a3d1c311f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chadicus/coding-standard/zipball/971fac1625463a72df0034fbfdd263561f2ccb4f",
-                "reference": "971fac1625463a72df0034fbfdd263561f2ccb4f",
+                "url": "https://api.github.com/repos/chadicus/coding-standard/zipball/3264851a30a7305995998660ee239d1a3d1c311f",
+                "reference": "3264851a30a7305995998660ee239d1a3d1c311f",
                 "shasum": ""
             },
             "require": {
@@ -753,7 +756,7 @@
                 "phpcs",
                 "standard"
             ],
-            "time": "2015-12-01 19:20:36"
+            "time": "2016-08-04 18:59:29"
         },
         {
             "name": "phploc/phploc",
@@ -956,20 +959,23 @@
         },
         {
             "name": "phpunit/php-timer",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "3e82f4e9fc92665fafd9157568e4dcb01d014e5b"
+                "reference": "38e9124049cf1a164f1e4537caf19c99bf1eb260"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/3e82f4e9fc92665fafd9157568e4dcb01d014e5b",
-                "reference": "3e82f4e9fc92665fafd9157568e4dcb01d014e5b",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/38e9124049cf1a164f1e4537caf19c99bf1eb260",
+                "reference": "38e9124049cf1a164f1e4537caf19c99bf1eb260",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4|~5"
             },
             "type": "library",
             "autoload": {
@@ -993,7 +999,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2015-06-21 08:01:12"
+            "time": "2016-05-12 18:03:57"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -1168,21 +1174,68 @@
             "time": "2013-01-13 10:24:48"
         },
         {
-            "name": "sebastian/finder-facade",
-            "version": "1.2.0",
+            "name": "psr/log",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/finder-facade.git",
-                "reference": "a520dcc3dd39160eea480daa3426f4fd419a327b"
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/finder-facade/zipball/a520dcc3dd39160eea480daa3426f4fd419a327b",
-                "reference": "a520dcc3dd39160eea480daa3426f4fd419a327b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "shasum": ""
             },
             "require": {
-                "symfony/finder": "~2.3",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-10-10 12:19:37"
+        },
+        {
+            "name": "sebastian/finder-facade",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/finder-facade.git",
+                "reference": "2a6f7f57efc0aa2d23297d9fd9e2a03111a8c0b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/finder-facade/zipball/2a6f7f57efc0aa2d23297d9fd9e2a03111a8c0b9",
+                "reference": "2a6f7f57efc0aa2d23297d9fd9e2a03111a8c0b9",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/finder": "~2.3|~3.0",
                 "theseer/fdomdocument": "~1.3"
             },
             "type": "library",
@@ -1204,20 +1257,20 @@
             ],
             "description": "FinderFacade is a convenience wrapper for Symfony's Finder component.",
             "homepage": "https://github.com/sebastianbergmann/finder-facade",
-            "time": "2015-06-04 08:11:58"
+            "time": "2016-02-17 07:02:23"
         },
         {
             "name": "sebastian/git",
-            "version": "2.0.1",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/git.git",
-                "reference": "2d5c139d0eedcb9e67e0e9ca08023be6e9b7b47b"
+                "reference": "5100bc50cd9e70f424c643618e142214225024f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/git/zipball/2d5c139d0eedcb9e67e0e9ca08023be6e9b7b47b",
-                "reference": "2d5c139d0eedcb9e67e0e9ca08023be6e9b7b47b",
+                "url": "https://api.github.com/repos/sebastianbergmann/git/zipball/5100bc50cd9e70f424c643618e142214225024f3",
+                "reference": "5100bc50cd9e70f424c643618e142214225024f3",
                 "shasum": ""
             },
             "require": {
@@ -1226,7 +1279,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -1249,7 +1302,7 @@
             "keywords": [
                 "git"
             ],
-            "time": "2015-04-06 16:23:43"
+            "time": "2016-06-15 09:30:19"
         },
         {
             "name": "sebastian/version",
@@ -1296,19 +1349,20 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.5.1",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "6731851d6aaf1d0d6c58feff1065227b7fda3ba8"
+                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/6731851d6aaf1d0d6c58feff1065227b7fda3ba8",
-                "reference": "6731851d6aaf1d0d6c58feff1065227b7fda3ba8",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
+                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
                 "shasum": ""
             },
             "require": {
+                "ext-simplexml": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
                 "php": ">=5.1.2"
@@ -1369,24 +1423,25 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-01-19 23:39:10"
+            "time": "2016-09-01 23:53:02"
         },
         {
             "name": "symfony/console",
-            "version": "v3.0.2",
+            "version": "v3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "5a02eaadaa285e2bb727eb6bbdfb8201fcd971b0"
+                "reference": "c99da1119ae61e15de0e4829196b9fba6f73d065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/5a02eaadaa285e2bb727eb6bbdfb8201fcd971b0",
-                "reference": "5a02eaadaa285e2bb727eb6bbdfb8201fcd971b0",
+                "url": "https://api.github.com/repos/symfony/console/zipball/c99da1119ae61e15de0e4829196b9fba6f73d065",
+                "reference": "c99da1119ae61e15de0e4829196b9fba6f73d065",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.9",
+                "symfony/debug": "~2.8|~3.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
@@ -1402,7 +1457,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1429,29 +1484,86 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-02-02 13:44:19"
+            "time": "2016-10-06 01:44:51"
         },
         {
-            "name": "symfony/finder",
-            "version": "v2.8.2",
+            "name": "symfony/debug",
+            "version": "v3.1.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/finder.git",
-                "reference": "c90fabdd97e431ee19b6383999cf35334dff27da"
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/c90fabdd97e431ee19b6383999cf35334dff27da",
-                "reference": "c90fabdd97e431ee19b6383999cf35334dff27da",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
+                "reference": "e2b3f74a67fc928adc3c1b9027f73e1bc01190a8",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9",
+                "psr/log": "~1.0"
+            },
+            "conflict": {
+                "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
+            },
+            "require-dev": {
+                "symfony/class-loader": "~2.8|~3.0",
+                "symfony/http-kernel": "~2.8|~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Debug\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Debug Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-09-06 11:02:40"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v3.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "205b5ffbb518a98ba2ae60a52656c4a31ab00c6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/205b5ffbb518a98ba2ae60a52656c4a31ab00c6f",
+                "reference": "205b5ffbb518a98ba2ae60a52656c4a31ab00c6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1478,20 +1590,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-01-14 08:26:52"
+            "time": "2016-09-28 00:11:12"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "1289d16209491b584839022f29257ad859b8532d"
+                "reference": "dff51f72b0706335131b00a7f49606168c582594"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
-                "reference": "1289d16209491b584839022f29257ad859b8532d",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/dff51f72b0706335131b00a7f49606168c582594",
+                "reference": "dff51f72b0706335131b00a7f49606168c582594",
                 "shasum": ""
             },
             "require": {
@@ -1503,7 +1615,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -1537,20 +1649,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-01-20 09:13:37"
+            "time": "2016-05-18 14:26:46"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.2",
+            "version": "v2.8.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "34c8a4b51e751e7ea869b8262f883d008a2b81b8"
+                "reference": "396784cd06b91f3db576f248f2402d547a077787"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/34c8a4b51e751e7ea869b8262f883d008a2b81b8",
-                "reference": "34c8a4b51e751e7ea869b8262f883d008a2b81b8",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/396784cd06b91f3db576f248f2402d547a077787",
+                "reference": "396784cd06b91f3db576f248f2402d547a077787",
                 "shasum": ""
             },
             "require": {
@@ -1586,7 +1698,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-01-13 10:28:07"
+            "time": "2016-10-21 20:59:10"
         },
         {
             "name": "theseer/fdomdocument",
@@ -1635,7 +1747,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "~5.4"
+        "php": "^5.6 || ^7.0"
     },
     "platform-dev": []
 }

@@ -12,7 +12,6 @@
     "license": "MIT",
     "extra": {
         "heroku": {
-            "document-root": "public",
             "newrelic": false,
             "php-config": [
                 "date.timezone=America/New_York"
@@ -20,9 +19,9 @@
         }
     },
     "require": {
-        "php": "~5.4",
-        "dominionenterprises/filter": "~1.0",
-        "chadicus/marvel-api-client": "~1.0",
+        "php": "^5.6 || ^7.0",
+        "dominionenterprises/filter": "^2.0",
+        "chadicus/marvel-api-client": "^2.0",
         "slim/slim": "~2.3",
         "slim/views": "~0.1.0",
         "twig/twig": "~1.14"
