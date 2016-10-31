@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}strtotime tester{% endblock %}
+{% block content %}
+    <div class="jumbotron jumbotron-home text-center">
+        <center>
+            <h2>Enter Date String</h2>
+            <form action="#" method="POST">
+				<input type="text" name="str" placeholder="date string" />
+				<input type="submit" value="Submit" />
+			</form>
+ 		{% if results %}
+			<p>    Input: {{ results.input }}</p>
+			<p>Timestamp: {{ results.timestamp }}</p>
+			<p>    Date: {{ results.date }}</p>
+        {% endif %}
+        </center>
+    </div>
+{% endblock %}

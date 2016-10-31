@@ -9,6 +9,23 @@ return function(\Slim\Slim $app) {
         $app->render('home.html', ['page' => 'home', 'projects' => $projects]);
     })->name('home');
 
+    $app->get('/strtotime', function () use ($app) {
+        $app->render('strtotime.html');
+    });
+
+    $app->post('/strtotime', function () use ($app) {
+        $app->render(
+            'strtotime.html',
+            [
+                'results' => [
+				    'input' => $_POST['str'],
+    			    'timestamp' => strtotime($_POST['str']),
+    			    'date' => date('r', strtotime($_POST['str'])),
+                ],
+            ]
+        );
+    });
+
     $app->get('/resume', function() use ($app) {
         $body = file_get_contents(__DIR__ . '/../data/resume.pdf');
         $app->response->headers->set('Content-Type', "application/pdf");
